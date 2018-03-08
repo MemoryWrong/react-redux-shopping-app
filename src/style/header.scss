@@ -2,18 +2,31 @@
 /* this is for header */
 header{
     background-color: $main-theme;
-    display: flex;
     // padding: 20px 10px;
+    .title-wrapper{
+        padding: 10px 20px;
+        display: flex;
+    }
+    .search-wrapper{
+        padding: 10px 10px;
+        input{
+            width: 100%;
+            border-radius: 5px;
+            height: 30px;
+            text-indent: 10px;
+        }
+    }
   }
   /* Position and sizing of burger button */
   .bm-burger-button {
     position: relative;
     width: 20px;
     height: 18px;
-    top: 0px;
-    left: 0px; 
+    margin-right: 20px;
+    // margin: 10px 20px;
     /* left: 36px; */
     /* top: 36px; */
+    
   }
   
   /* Color/shape of burger icon bars */
@@ -33,8 +46,12 @@ header{
   }
   
   /* General sidebar styles */
+  .header-menu{
+      top: 0px;
+      left: 0px;
+  }
   .bm-menu {
-    background: #373a47;
+    background: $main-theme;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
   }
@@ -52,5 +69,7 @@ header{
   
   /* Styling of overlay */
   .bm-overlay {
+    top: 0px;
+    left: 0px;
     background: rgba(0, 0, 0, 0.3);
   }

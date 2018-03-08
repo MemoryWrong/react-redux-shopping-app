@@ -12,14 +12,17 @@ class HeaderComp extends Component {
   render() {
     return (
       <header className="header">
-        <Menu className="header-menu">
-          <a id="home" className="menu-item" href="/">Home</a>
-          <a id="about" className="menu-item" href="/about">About</a>
-          <a id="contact" className="menu-item" href="/contact">Contact</a>
-          <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
-        </Menu>
-        <div>
-          this is input... todo
+        <div className="title-wrapper">
+          <Menu className="header-menu">
+            <a id="home" className="menu-item" href="/">Home</a>
+            <a id="about" className="menu-item" href="/about">About</a>
+            <a id="contact" className="menu-item" href="/contact">Contact</a>
+            <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
+          </Menu>
+          <div>Ebay | AU</div>
+        </div>
+        <div className="search-wrapper">
+          <input placeholder="搜索宝贝" />
         </div>
       </header>      
        
